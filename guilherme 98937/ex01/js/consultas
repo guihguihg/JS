@@ -1,0 +1,14 @@
+ function totalConsultas(listaUnidades) {
+    const quantidadeCarros = listaUnidades.reduce((contador, unidade) => {
+        // Verifica se o carro atende à condição de busca
+        if ( unidade.endereco_municipio_nome === 'São Paulo') {
+            contador++;
+        }
+
+        // Retorna o contador atualizado
+        return contador;
+    }, 0);
+
+    // Retorna a quantidade total de carros que atendem à condição
+    return quantidadeCarros;
+}

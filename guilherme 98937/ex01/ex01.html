@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guilherme - 98937 matheus - 99996 yan - 99835</title>
+
+    <!-- Link CSS BS - NÃO APAGAR -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h4 class="text-center bg-warning m-0 py-4">
+            Lista de Unidades de Atendimento
+        </h4>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Bairro</th>
+                    <th>Cidade / UF</th>
+                    <th>Clínica</th>
+                    <th>Consultas Mês</th>
+                </tr>
+            </thead>
+            <tbody id="unidades">
+            </tbody>
+            <tfoot>
+                <tr class="table-dark">
+                    <td colspan="5" class="text-end fs-5">Número de consultas realizadas:</td>
+                    <td id="numeroConsultas" class="text-center"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+        <div class="row my-5 border rounded">
+            <div class="col-md-6 text-center my-3 rounded p-2">
+                <h5>Total de Unidades - Cidade São Paulo</h5>
+                <h4 id="totalunidadesSP"></h4>
+            </div>
+            <div class="col-md-6 text-center my-3 rounded p-2">
+                <h5>Total de Unidades - Outras Cidades</h5>
+                <h4 id="totalunidadesForaSP"></h4>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/unidades.js"></script>
+    <script src="./js/consultasRealizadas.js"></script>
+    <script src="./js/buscar.js"></script>
+    <script src="./js/consultas"></script>
+    
+
+    
+</body>
+
+</html>
